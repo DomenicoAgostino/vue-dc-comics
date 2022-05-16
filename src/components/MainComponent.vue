@@ -1,13 +1,12 @@
 <template>
-  <main class="">
-    <h1> Content</h1>
+  <main class="d-flex align-content-center ">
+    <h1> --/ Content goes here \-- </h1>
   </main>
 </template>
 
 <script>
 export default {
   name: 'MainComponent'
-
 }
 </script>
 
@@ -15,13 +14,13 @@ export default {
 
 main {
   background-color: #1c1c1c;
-  height: 150px;
+  height: 160px;
   
 
 }
 
 h1 {
-  color: #ffffff;
+  color: white;
 }
 
 </style>
