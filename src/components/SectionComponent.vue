@@ -1,4 +1,5 @@
 <template>
+<section>
 <div class="shop-dc d-flex align-items-center">
   <div class="container">
     <nav>
@@ -13,29 +14,29 @@
 
         <li>
           <a href="">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-            digital comics
+            <img src="../assets/img/buy-comics-merchandise.png" alt="Digital Comics">
+            dc merchandise
           </a>
         </li>
 
         <li>
           <a href="">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-            digital comics
+            <img src="../assets/img/buy-comics-subscriptions.png" alt="Digital Comics">
+            subscription
           </a>
         </li>
 
         <li>
           <a href="">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-            digital comics
+            <img class="locator" src="../assets/img/buy-comics-shop-locator.png" alt="Digital Comics">
+            comic shop locator
           </a>
         </li>
 
         <li>
           <a href="">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-            digital comics
+            <img class="visa" src="../assets/img/buy-dc-power-visa.svg" alt="Digital Comics">
+            dc power visa
           </a>
         </li>
 
@@ -44,12 +45,14 @@
   </div>
 </div>
 
+</section>
+
 
 </template>
 
 <script>
 export default {
-  name: 'ShopComponent'
+  name: 'SectionComponent'
 }
 </script>
 
@@ -60,8 +63,26 @@ export default {
   height: 200px;
 }
 
-img{
-  width: 20%;
+a{
+  color: white;
 }
+
+li{
+  padding: 0 10px;
+}
+
+img{
+  width: 25%;
+  margin-right: 9px;
+}
+
+.visa{
+  width: 60%;
+}
+
+.locator{
+  width: 15%;
+}
+
 
 </style>
