@@ -1,26 +1,53 @@
 <template>
-  <main class="d-flex align-content-center ">
-    <h1> --/ Content goes here \-- </h1>
+
+  <main>
+    <div class="container">
+      
+      <ComicCard  v-for="(comic, index) in dataCard" 
+                  :key="`comic${index}`"
+                  :comicImg="comic.thumb"
+                  :comicTitle="comic.series"
+                  :comicPrice="comic.price"
+      />
+    
+    </div>
+
+    <div class="load-more d-flex justify-content-around">
+      <a href="#">load more</a>
+    </div>
+
   </main>
+  
 </template>
 
 <script>
+import ComicCard from './ComicCard.vue';
+import dataCard from '../assets/data/dataCard'
 export default {
-  name: 'MainComponent'
+  
+  name: 'MainComponents',
+  components: {ComicCard},
+  data(){
+    return {
+      dataCard
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-
-main {
-  background-color: #1c1c1c;
-  height: 160px;
-  
-
-}
-
-h1 {
-  color: white;
-}
-
+  @import '../assets/style/vars';
+  main {
+    background-color: #1C1C1C;
+    padding: 20px 0px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  a {
+    color: white;
+    background-color: #0282F9;
+    padding: 5px 55px;
+  }
 </style>

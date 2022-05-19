@@ -101,11 +101,13 @@ ul {
         color: #0281fa;
       }
     }
+ 
+  }
 
-    .active{
+  .active{
+
       border-bottom: 3px solid #0281fa;;
     }
-  }
 }
 
 </style>

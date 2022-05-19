@@ -1,6 +1,6 @@
 <template>
 <section>
-<div class="shop-dc d-flex align-items-center">
+<div class="shop d-flex align-items-center">
   <div class="container">
     <nav>
       <ul class="d-flex">
@@ -58,31 +58,28 @@ export default {
 
 <style lang="scss" scoped>
 
-.shop-dc {
-  background-color: #0282F9;
-  height: 200px;
-}
-
-a{
-  color: white;
-}
-
-li{
-  padding: 0 10px;
-}
-
-img{
-  width: 25%;
-  margin-right: 9px;
-}
-
-.visa{
-  width: 60%;
-}
-
-.locator{
-  width: 15%;
-}
-
+ .shop {
+    background-color: #0282F9;
+    height: 200px;
+  }
+  img {
+    width: 25%;
+  }
+  li {
+    padding: 0px 10px ;
+    a {
+      color: #FFFFFF;
+      img {
+        margin-right: 10px;
+      }
+    }
+  } 
+  
+  .power-visa {
+    width: 19%;
+  }
+  .locator {
+    width: 17%;
+  }
 
 </style>

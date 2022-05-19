@@ -154,6 +154,10 @@ export default {
 
   a {
     color: grey;
+    text-transform: uppercase;
+  }
+  button{
+    text-transform: uppercase;
   }
 
   .communication-dc-comics, .communication-dc, .communication-sites {
